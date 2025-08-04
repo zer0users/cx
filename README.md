@@ -52,3 +52,9 @@ It will return an **MyApplication.cxA** file, Run it:
 ```bash
 cx MyApplication.cxA
 ```
+
+### Questions
+
+Question: Is **cx** a **malware**?
+
+Anwser: No, cx is not a malware, in reality, an .cxA created by someone CAN be a malware, Because cx creates and compiles .cx files to an executable (.cxA), cx will run the code in the .cxA, so please! Do not run .cxA that do not you trust, cx is a open-source project, you can check the code on "cx_build.c".
