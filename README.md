@@ -58,3 +58,12 @@ cx MyApplication.cxA
 Question: Is **cx** a **malware**?
 
 Anwser: No, cx is not a malware, in reality, an .cxA created by someone CAN be a malware, Because cx creates and compiles .cx files to an executable (.cxA), cx will run the code in the .cxA, so please! Do not run .cxA that do not you trust, cx is a open-source project, you can check the code on "cx_build.c".
+
+Question: If **cx** cannot be malware, the **install.sh** can be malware?
+
+Anwser: No, the installer has steps for install cx
+
+Step 1. Download "cx_build.c" - The installer downloads first the source code
+Step 2. Compile "cx_build.c" to an executable - After the installer downloads the source code, it executes "gcc -o cx cx_build.c -lz" to compile it to an executable.
+Step 3. Request sudo permissions to move it into "/usr/bin" - The installer moves the compiled executable to the "/usr/bin" folder, that are the programs.
+Step 4. Finish - The installer finishes with an Loving message!
