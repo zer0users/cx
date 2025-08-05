@@ -64,6 +64,9 @@ Question: If **cx** cannot be malware, the **install.sh** can be malware?
 Anwser: No, the installer has steps for install cx
 
 Step 1. Download "cx_build.c" - The installer downloads first the source code
+
 Step 2. Compile "cx_build.c" to an executable - After the installer downloads the source code, it executes "gcc -o cx cx_build.c -lz" to compile it to an executable.
+
 Step 3. Request sudo permissions to move it into "/usr/bin" - The installer moves the compiled executable to the "/usr/bin" folder, that are the programs.
+
 Step 4. Finish - The installer finishes with an Loving message!
