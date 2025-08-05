@@ -1305,7 +1305,7 @@ void build_command() {
 
 // Show help
 void show_help() {
-    printf("CX Programming Language v%s - Faster than Five ❤️\n", CX_VERSION);
+    printf("CX Programming Language v%s - More love! ❤️\n", CX_VERSION);
     printf("Usage:\n");
     printf("  cx build                     - Build application from main.cx\n");
     printf("  cx <app.cxA>                 - Run CX application\n");
@@ -1320,7 +1320,7 @@ void show_help() {
     printf("  <project_name>.cxA           - CX Application file (binary compressed)\n");
     printf("\n");
     printf("Binary .cxA structure:\n");
-    printf("  Header (magic, version, sizes)\n");
+    printf("  Header (version, sizes)\n");
     printf("  Compressed settings.json\n");
     printf("  Compressed main.cx-code\n");
     printf("  Additional compressed files\n");
